@@ -4,7 +4,7 @@ function write($text1, $text2, $request_id)
 	header('Content-Type: image/jpeg');
 	$jpg_image = imagecreatefromjpeg('ticket_1.jpg');			
 	$font_color = imagecolorallocate($jpg_image, 0, 0, 0);
-	$font_path = 'C:\Windows\Fonts\ariblk.ttf';
+	$font_path = 'KeepCalm-Medium.ttf';
 	$font_size = 29;
 	imagettftext($jpg_image, $font_size, 0, 750, 550, $font_color, $font_path, $text1);
     imagettftext($jpg_image, $font_size, 0, 750, 700, $font_color, $font_path, $text2);
